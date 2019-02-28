@@ -1,0 +1,9 @@
+# 7. Get the internal IP address of the overlord container without starting its shell and in one command. 
+# #1 check the id
+docker ps -a
+# #2 # Append the container ID (CID) to the end of an inspect
+docker inspect -f '{{.NetworkSettings.IPAddress}}' overload
+# or
+# Add -q to automatically parse and return the last CID created.
+docker inspect --format '{{ .NetworkSettings.IPAddress }}' $(docker ps -q)
+# ### source: http://networkstatic.net/10-examples-of-how-to-get-docker-container-ip-address/

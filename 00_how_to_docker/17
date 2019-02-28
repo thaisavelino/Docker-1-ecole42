@@ -1,0 +1,10 @@
+# 17. Display all the currently active containers on the Char virtual machine.
+ 
+ docker ps
+ 
+# This lists all containers tha are lauch
+# We can see all the ports that has redirection... at PORTS on table.. like 
+# the 80 to 8081 that we just did for php admin
+# Docker process
+# Docker monitorjust one process each time. if you wanna launch more... need
+# to find techniches to let just one open and not affect others.
