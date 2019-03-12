@@ -1,21 +1,16 @@
 FROM alpine
 
-LABEL vendor1="Ecole 42 - Docker-1"
-LABEL com.example.release-date="2019-02-28"
-MAINTAINER tavelino <tavelino@student.42.fr>
-
-RUN apk update && \
-apk upgrade && \
-apk add vim 
+RUN apk update
+RUN apk add vim
 
 ENTRYPOINT vim
-
 ## Usage:
 ## 1 build 
-# docker build -t ex00
+# docker build -t tavelino/ex00 .
 ## 2 then run
-# docker run --rm -ti ex00
+# docker run -it --rm tavelino/ex00
 ##  source: https://docs.docker.com/engine/reference/builder/
+##  source: https://docs.docker.com/engine/reference/commandline/build/
 ##
 ## FROM: Informa a partir de qual imagem será gerada a nova imagem, lembrando que em poucos casos (Veremos em posts futuros), uma imagem será gerada se um imagem base;
 ## LABEL: Adiciona metadados a uma imagem, informações adicionais que servirão para identificar versão, tipo de licença, ou host, lembrando que a cada nova instrução LABEL é criada uma nova layer, o Docker recomenda que você não use muitas LABEL. É possível realizar filtragens posteriormente utilizando essas LABEL.

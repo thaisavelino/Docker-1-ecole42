@@ -1,3 +1,4 @@
+#!/bin/bash
 # 7. Get the internal IP address of the overlord container without starting its shell and in one command. 
 # #1 check the id
 docker ps -a

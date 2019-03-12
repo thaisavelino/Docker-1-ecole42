@@ -1,3 +1,4 @@
+#!/bin/bash
 # 25. List all the services of the local swarm.
  
  docker service ls

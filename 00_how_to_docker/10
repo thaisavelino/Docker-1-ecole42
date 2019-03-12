@@ -1,3 +1,4 @@
+#!/bin/bash
 # 10. Create a volume named hatchery.
 
 docker volume create --name hatchery

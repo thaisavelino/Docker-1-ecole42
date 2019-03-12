@@ -1,3 +1,4 @@
+#!/bin/bash
 # 14. Launch a wordpress container as a background task, just for fun. 
 # The container should be named lair, its 80 port should be bound to the 8080
 # port of the virtual machine, and it should be able to use the spawning-pool 

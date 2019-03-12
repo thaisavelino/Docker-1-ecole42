@@ -1,3 +1,4 @@
+#!/bin/bash
 # 12. Launch a mysql container as a background task. It should be able to 
 # restart on its own in case of error, and the root password of the database 
 # should be Kerrigan. You will also make sure that the database is stored in 
