@@ -14,6 +14,7 @@ docker container run -it --rm --name alpine alpine /bin/sh
 ##you will see that  it was deleted as expected.
 #
 #
+##############################################################################
 ## Usually, an Alpine Linux image doesn't contain bash, Instead you can use
 ## /bin/ash, /bin/sh, ash or only sh.
 ## You can choose any of them.. I prefer /bin/sh

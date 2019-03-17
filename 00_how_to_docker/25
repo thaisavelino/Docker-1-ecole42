@@ -4,4 +4,3 @@
 docker service ls
 
 # It shows the service and replica we have
-

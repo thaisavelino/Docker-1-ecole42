@@ -3,8 +3,8 @@
 
 docker network create -d overlay overmind
 
-# -d, --driver string — Driver to manage the Network (default "bridge") which
-# causes some problems the best is change.
+## -d, --driver string — Driver to manage the Network (default "bridge") which
+## causes some problems the best is change.
 
-# Check them
-docker network ls
+## Check them
+#docker network ls

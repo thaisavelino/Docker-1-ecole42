@@ -1,7 +1,7 @@
 #!/bin/bash
 # 17. Display all the currently active containers on the Char virtual machine.
  
- docker container ps
+docker container ps
  
 # This lists all containers tha are lauch
 # We can see all the ports that has redirection... at PORTS on table.. like 

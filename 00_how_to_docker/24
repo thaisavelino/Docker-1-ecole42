@@ -5,8 +5,7 @@
 
 docker service create -d --network overmind --name orbital-command -e RABBITMQ_DEFAULT_USER=exam -e RABBITMQ_DEFAULT_PASS=exam rabbitmq
 
-# then change the default username and password here too
-
+## then change the default username and password here too:
 #docker run -d --hostname my-rabbit --name some-rabbit -e RABBITMQ_DEFAULT_USER=tavelino -e RABBITMQ_DEFAULT_PASS=admin rabbitmq:3-management
 
 #####################################################
