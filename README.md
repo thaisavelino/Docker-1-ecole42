@@ -3,16 +3,16 @@ Project made for school 42.
 
 # How to use it 
 
-## folder /00_how_to_docker
+**folder /00_how_to_docker**
 
 1. Run the script to change chmod of all files
 `sh .make_exec.sh`
 
 2. run all scripts
 
-## folder 01_dockerfiles
+**folder 01_dockerfiles**
 
-I put comments of how to use each of them
+There are comments showing how to use each of them
 
 # Correction
 Things you must check when correcting another student.
