@@ -1,0 +1,10 @@
+#!/bin/bash
+# 23. Create an overlay-type internal network that you will name overmind.
+
+docker network create -d overlay overmind
+
+# -d, --driver string — Driver to manage the Network (default "bridge") which
+# causes some problems the best is change.
+
+# Check them
+docker network ls

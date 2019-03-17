@@ -1,0 +1,8 @@
+#!/bin/bash
+# 32. Force quit and delete all the containers (whatever their status), in one 
+# command.
+
+docker container rm -f $(docker ps -a -q)
+
+################################################################################
+# - f force to remove even running one.. it kills this.

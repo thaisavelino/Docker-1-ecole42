@@ -1,0 +1,9 @@
+#!/bin/bash
+# 27. Get the real-time logs of one the tasks of the engineering-bay service.
+
+docker service logs -f $(docker service ps -f "name=engineering-bay.1" engineering-bay -q)
+
+#############################################################################
+# source: https://docs.docker.com/engine/reference/commandline/service_ps/
+# you can filter using your tasks names comme ça:
+# $ docker service ps -f "name=redis.1" redis

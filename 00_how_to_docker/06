@@ -1,0 +1,21 @@
+#!/bin/bash
+# 6. Launch an nginx container, available on Docker Hub, as a background task.
+# It should be named overlord, be able to restart on its own, and have its 
+# 8me string — Assign a name to the container.0 port attached to the 5000 port of Char. You can check that your container
+# functions properly by visiting http://:5000 on your web browser. 
+
+docker container run -d --publish 5000:80 --name overlord --restart=always nginx
+
+
+## check ip address docker container ls
+## And then test it on your browser 0.0.0.0:5000
+##
+# Obs, if you run docker container ls you will see the container ID n the table
+# shows the same id as the command that you just did returns.. 
+# (because of the -d flag)
+#
+# flags:
+# -d, --detach — Run container in background and print container ID.
+# -p is a ports mapping <HOST PORT>:<CONTAINER PORT>
+# --name string — Assign a name to the container.
+# --restart - has lots of options I just choose always.

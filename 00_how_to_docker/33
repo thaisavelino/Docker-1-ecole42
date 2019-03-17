@@ -1,0 +1,5 @@
+#!/bin/bash
+# 33. Delete all the container images stored on the Char virtual machine, in one
+# command as well.
+
+docker rmi -f $(docker images -a -q)

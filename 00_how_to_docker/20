@@ -1,0 +1,14 @@
+#!/bin/bash
+# 20. Create a local swarm, the Char virtual machine should be its manager.
+
+docker swarm init --advertise-addr $(docker-machine ip Char)
+
+# then it gives you the command to add a node on this swarm
+#######################################
+# understanding the command swarm init:
+#######################################
+# docker swarm init --advertise-addr <MANAGER-IP>
+# docker node ls to check 
+#docker swarn init is the first step. It create a cluster.
+# --advertise-addr says with network will be the manager that will talk to the 
+# workers (nodes).

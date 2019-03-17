@@ -1,0 +1,25 @@
+#!/bin/bash
+# 22. Turn Aiur into a slave of the local swarm in which Char is leader (the
+# command to take control of Aiur is not requested).
+
+## to connect your new node
+#docker-machine ssh Aiur
+
+docker-machine ssh Aiur "docker swarm join --token $(docker swarm join-token worker -q) $(docker-machine ip Char):2377"
+
+## token is the key that authorizes you to join that swarm was given before but
+## you can run this command to capture this $(docker swarm join-token worker -q)
+## 2377 is the port to manage docker swarm
+## where -q — Is to only display token.
+# Then we must say the manager IP and the port.. this command shows the IP from Char wich is our manager $(docker-machine ip Char)
+
+
+### Add worker to this swarm we could run
+#docker swarm join \
+#--token SWMTKN-1-49nj1cmql0jkz5s954yi3oex3nedyz0fb0xx14ie39trti4wxv-8vxv8rssmk743ojnwacrr2e7c \
+#192.168.99.100:2377
+# *** this IP and Port was shown in the command before
+#
+#############################################################
+# https://docs.docker.com/engine/swarm/join-nodes/
+# https://docs.docker.com/engine/swarm/join-nodes/

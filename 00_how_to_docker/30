@@ -1,0 +1,14 @@
+#!/bin/bash
+## 30. Increase the number of copies of the marines service up to twenty, because
+## there’s never enough Marines to eliminate Zergs. (Remember to take a look at
+## the tasks and logs of the service, you’ll see, it’s fun.)
+ 
+ docker service scale -d marines=20
+
+## now if you will see much more if you run again
+# docker service ps marines 
+
+## And also can check the logs for fun =)
+#docker service logs -f $(docker service ps marines -f "name=marines.11" -q)
+
+## source: https://docs.docker.com/engine/reference/commandline/service_scale/
