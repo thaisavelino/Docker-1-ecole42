@@ -12,7 +12,7 @@ Project made for school 42.
 
 **folder 01_dockerfiles**
 
-I put comments of how to use each of them
+There are comments showing how to use each of them
 
 # Correction
 Things you must check when correcting another student.
